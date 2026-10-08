@@ -7,7 +7,7 @@ const STATUS = {
 }
 
 const items = [
-  { icon: ScanText, status: 'live', title: 'Entity extraction', text: 'Claude reads credit-card statement PDFs and pulls out merchant, date, amount and installment (3 of 10) for every purchase.', note: 'Today this runs as a guided workflow run by us, with a person confirming each result. In-app upload is built and in testing.' },
+  { icon: ScanText, status: 'live', title: 'Entity extraction', text: 'Claude reads credit-card statement PDFs and pulls out merchant, date, amount and installment (3 of 10) for every purchase.', note: 'Upload a statement in the app and a person confirms each line before it is saved.' },
   { icon: Tags, status: 'live', title: 'Smart categorization', text: 'Each purchase is matched to your own categories, so "PADARIA STA LUZIA" becomes Groceries without a rulebook.' },
   { icon: FileText, status: 'live', title: 'Plain-language summaries', text: 'Every statement comes with a short summary: the total, the biggest purchases, running installments and anything unusual.' },
   { icon: MessagesSquare, status: 'dev', title: 'Conversational assistant', text: 'Ask "how much did we spend on eating out vs. last month?" The assistant answers from a summary of your own data and never changes anything.' },

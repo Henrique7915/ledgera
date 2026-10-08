@@ -1,4 +1,4 @@
-import { ScanText, Tags, FileText, MessagesSquare, Zap, Bot, Sparkles, Wrench } from 'lucide-react'
+import { ScanText, Tags, FileText, MessagesSquare, Zap, Bot, Sparkles } from 'lucide-react'
 
 const STATUS = {
   live: { label: 'Working today', cls: 'bg-mint-400 text-ink' },
@@ -7,11 +7,11 @@ const STATUS = {
 }
 
 const items = [
-  { icon: ScanText, status: 'live', title: 'Entity extraction', text: 'Claude reads credit-card statement PDFs and pulls out merchant, date, amount and installment (3 of 10) for every purchase.', note: 'Today this runs as a guided workflow run by us, with a person confirming each result.' },
+  { icon: ScanText, status: 'live', title: 'Entity extraction', text: 'Claude reads credit-card statement PDFs and pulls out merchant, date, amount and installment (3 of 10) for every purchase.', note: 'Today this runs as a guided workflow run by us, with a person confirming each result. In-app upload is built and in testing.' },
   { icon: Tags, status: 'live', title: 'Smart categorization', text: 'Each purchase is matched to your own categories, so "PADARIA STA LUZIA" becomes Groceries without a rulebook.' },
   { icon: FileText, status: 'live', title: 'Plain-language summaries', text: 'Every statement comes with a short summary: the total, the biggest purchases, running installments and anything unusual.' },
-  { icon: MessagesSquare, status: 'dev', title: 'Conversational assistant', text: 'Ask "how much did we spend on eating out vs. last month?" The assistant answers by calling tools over your ledger through an MCP server.' },
-  { icon: Zap, status: 'plan', title: 'Capture from a message', text: 'Type or say "42 at the bakery on the Nubank card" and get a ready-to-confirm entry with category and card.' },
+  { icon: MessagesSquare, status: 'dev', title: 'Conversational assistant', text: 'Ask "how much did we spend on eating out vs. last month?" The assistant answers from a summary of your own data and never changes anything.' },
+  { icon: Zap, status: 'dev', title: 'Capture from a message', text: 'Type or say "42 at the bakery on the Nubank card" and get a ready-to-confirm entry with category and card.' },
   { icon: Bot, status: 'plan', title: 'Autonomous agents', text: 'Scheduled agents that prepare your monthly review and flag unusual spending, with Claude Opus for harder multi-step reasoning.' }
 ]
 
@@ -29,14 +29,11 @@ function ChatMock() {
       </div>
       <div className="space-y-3">
         <p className="ml-auto max-w-[85%] rounded-2xl rounded-br-md bg-violet-500 px-4 py-3 text-base font-semibold">How much did we spend on eating out in September vs August?</p>
-        <p className="flex w-fit items-center gap-2 rounded-xl bg-black/25 px-3 py-2 font-mono text-xs text-mint-300">
-          <Wrench size={14} aria-hidden="true" /> query_transactions(category="Eating out", month="2026-09")
-        </p>
         <p className="max-w-[90%] rounded-2xl rounded-bl-md bg-white px-4 py-3 text-base font-semibold text-ink">
           You spent R$ 1.240 in September, R$ 180 less than in August. Most of it was weekend dinners.
         </p>
       </div>
-      <p className="mt-4 text-xs font-medium text-white/50">Illustrative conversation. The assistant is being built and is not available yet.</p>
+      <p className="mt-4 text-xs font-medium text-white/50">Illustrative conversation. The assistant is built and in testing, not open to the public yet.</p>
     </div>
   )
 }
@@ -74,7 +71,7 @@ export default function AISection() {
           <div>
             <h3 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Ask your money a question.</h3>
             <p className="mt-4 text-lg font-medium leading-relaxed text-white/70">
-              Instead of digging through filters, you will be able to just ask. The assistant uses tool calls to look up your real numbers, so answers come from your ledger and not from guesswork.
+              Instead of digging through filters, you will be able to just ask. The assistant is read-only and answers from your own data, not from guesswork.
             </p>
           </div>
           <ChatMock />

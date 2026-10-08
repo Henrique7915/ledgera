@@ -1,6 +1,6 @@
 // Unico lugar para trocar nome, dominio e e-mail quando o dominio proprio existir.
 export const NAME = 'Ledgera'
-export const DOMAIN = 'ledgera.app'
+export const DOMAIN = 'ledgera.win'
 export const URL = `https://${DOMAIN}`
 export const EMAIL = `contact@${DOMAIN}`
 export const TAGLINE = 'AI-powered money clarity for couples and households'

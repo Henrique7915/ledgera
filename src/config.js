@@ -9,3 +9,4 @@ export const DESCRIPTION =
 
 export const fill = (text) =>
   text.replaceAll('{{NAME}}', NAME).replaceAll('{{EMAIL}}', EMAIL).replaceAll('{{DOMAIN}}', DOMAIN).replaceAll('{{URL}}', URL)
+export const APP_URL = `https://app.${DOMAIN}`

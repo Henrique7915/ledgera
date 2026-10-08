@@ -1,5 +1,5 @@
 import Logo from './Logo'
-import { EMAIL } from '../config'
+import { APP_URL } from '../config'
 
 const links = [
   ['Features', '/#features'],
@@ -17,7 +17,7 @@ export default function Nav() {
             <li key={href}><a href={href} className="text-base font-semibold text-white/80 transition hover:text-white">{label}</a></li>
           ))}
         </ul>
-        <a href={`mailto:${EMAIL}?subject=Early%20access`} className="btn btn-mint !px-5 !py-2.5 text-sm sm:text-base">Early access</a>
+        <a href={APP_URL} className="btn btn-mint !px-5 !py-2.5 text-sm sm:text-base">Early access</a>
       </nav>
     </header>
   )

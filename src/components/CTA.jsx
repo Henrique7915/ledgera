@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react'
-import { EMAIL } from '../config'
+import { APP_URL } from '../config'
 
 export default function CTA() {
   return (
@@ -8,7 +8,7 @@ export default function CTA() {
         <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-mint-400/25 blur-3xl" aria-hidden="true" />
         <h2 className="relative mx-auto max-w-2xl text-3xl font-extrabold leading-tight tracking-tight sm:text-5xl">Be one of the first households on board</h2>
         <p className="relative mx-auto mt-4 max-w-xl text-lg font-medium text-white/75">We are opening early access gradually. Tell us you are interested and we will write back.</p>
-        <a href={`mailto:${EMAIL}?subject=Early%20access`} className="btn btn-mint relative mt-8">Request early access <ArrowRight size={20} aria-hidden="true" /></a>
+        <a href={APP_URL} className="btn btn-mint relative mt-8">Request early access <ArrowRight size={20} aria-hidden="true" /></a>
       </div>
     </section>
   )

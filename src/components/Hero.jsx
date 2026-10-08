@@ -1,7 +1,7 @@
 import { ArrowRight, ShieldCheck } from 'lucide-react'
 import Nav from './Nav'
 import PhoneMock from './PhoneMock'
-import { EMAIL } from '../config'
+import { APP_URL } from '../config'
 
 export default function Hero() {
   return (
@@ -21,7 +21,7 @@ export default function Hero() {
             Drop in a credit-card statement. Claude reads it, extracts the purchases, sorts them into your categories and keeps you and your partner on the same page. You confirm, we save.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href={`mailto:${EMAIL}?subject=Early%20access`} className="btn btn-mint">Get early access <ArrowRight size={20} aria-hidden="true" /></a>
+            <a href={APP_URL} className="btn btn-mint">Get early access <ArrowRight size={20} aria-hidden="true" /></a>
             <a href="#ai" className="btn btn-ghost">See what Claude does</a>
           </div>
           <p className="mt-6 flex items-center gap-2 text-sm font-semibold text-white/60">

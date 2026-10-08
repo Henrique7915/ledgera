@@ -18,7 +18,7 @@ export default function Hero() {
             Your household money, <span className="bg-gradient-to-r from-mint-300 to-mint-500 bg-clip-text text-transparent">finally clear.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg font-medium leading-relaxed text-white/75 sm:text-xl">
-            Drop in a credit-card statement. Claude reads it, extracts every purchase, sorts it into your categories and keeps you and your partner on the same page. You confirm, we save.
+            Drop in a credit-card statement. Claude reads it, extracts the purchases, sorts them into your categories and keeps you and your partner on the same page. You confirm, we save.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a href={`mailto:${EMAIL}?subject=Early%20access`} className="btn btn-mint">Get early access <ArrowRight size={20} aria-hidden="true" /></a>

@@ -7,9 +7,9 @@ const STATUS = {
 }
 
 const items = [
-  { icon: ScanText, status: 'live', title: 'Entity extraction', text: 'Claude reads credit-card statement PDFs and pulls out merchant, date, amount and installment (3 of 10) for every purchase.', note: 'Upload a statement in the app and a person confirms each line before it is saved.' },
+  { icon: ScanText, status: 'live', title: 'Entity extraction', text: 'Claude reads credit-card invoice PDFs and pulls out merchant, date, amount and installment number for each line.', note: 'Upload a statement in the app and a person confirms each line before it is saved.' },
   { icon: Tags, status: 'live', title: 'Smart categorization', text: 'Each purchase is matched to your own categories, so "PADARIA STA LUZIA" becomes Groceries without a rulebook.' },
-  { icon: FileText, status: 'live', title: 'Plain-language summaries', text: 'Every statement comes with a short summary: the total, the biggest purchases, running installments and anything unusual.' },
+  { icon: FileText, status: 'plan', title: 'Plain-language summaries', text: 'Planned: a short summary of each statement, with the biggest purchases and anything unusual.' },
   { icon: MessagesSquare, status: 'dev', title: 'Conversational assistant', text: 'Ask "how much did we spend on eating out vs. last month?" The assistant answers from a summary of your own data and never changes anything.' },
   { icon: Zap, status: 'dev', title: 'Capture from a message', text: 'Type or say "42 at the bakery on the Nubank card" and get a ready-to-confirm entry with category and card.' },
   { icon: Bot, status: 'plan', title: 'Autonomous agents', text: 'Scheduled agents that prepare your monthly review and flag unusual spending, with Claude Opus for harder multi-step reasoning.' }

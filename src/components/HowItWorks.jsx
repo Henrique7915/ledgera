@@ -1,5 +1,5 @@
 const steps = [
-  ['1', 'Share a statement', 'Upload the PDF your bank sends, from any of the banks you use.'],
+  ['1', 'Share a statement', 'Upload the PDF of your credit-card invoice.'],
   ['2', 'Claude reads it', 'Merchants, dates, amounts and installments are extracted and matched to your categories.'],
   ['3', 'You confirm', 'Review a plain-language summary. Only approved purchases reach your ledger.']
 ]
